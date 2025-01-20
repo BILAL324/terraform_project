@@ -24,3 +24,13 @@ resource "aws_instance" "first_terra_instance" {
 }
 
 
+
+terraform {
+  backend "s3" {
+    bucket = "myfirstbucket1006"
+    key = "./terraform.tfstate"
+    region = "ap-southeast-2"
+
+  }
+}
+
