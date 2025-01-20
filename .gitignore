@@ -1,6 +1,9 @@
 # Local Terraform directories
 .terraform/
 
+# Ignore provider binaries (for example AWS provider)
+.terraform/providers/
+
 # Local state files
 *.tfstate
 *.tfstate.*
